@@ -30,7 +30,7 @@ const App = () => {
   }
   const Part1 = () =>{
     return(
-      <Header />
+      <Header course={course}/>
     )
   }
   const Part2 = () => {
