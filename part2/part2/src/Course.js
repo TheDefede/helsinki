@@ -30,15 +30,15 @@ const Course = () => {
       <>
         {course.map(title =>{
           return(
-            <>
-              <h1 key={title.id}>{title.name}</h1>
+            <div key={title.id}>
+              <h1>{title.name}</h1>
               {title.parts.map(part =>{
                 return(
                   <p key={part.id}>{part.name}, exercises: {part.exercises}</p>
                 )
                 })}
               <p>Number of exercises: {title.parts.reduce(reducer,0)}</p>  
-            </>
+            </div>
           )
         })}      
       </>
